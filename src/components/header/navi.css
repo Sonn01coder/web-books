@@ -2,6 +2,33 @@
     height: 100%;
 } 
 
+.login {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
 .navi_wrap {
-    padding-top: 200px;
+    padding-top: 30px;
+}
+
+.navi_sologan {
+
+}
+
+
+.navi_search {
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.navi_search h1 {
+    font-size: 28px;
+}
+
+.navi_input{
+    
+}
+
+.navi_img {
+    width: 60%;
 }

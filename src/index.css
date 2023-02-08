@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: 'ubuntu', sans-serif;
+    overflow-x: hidden;
 }
 
 :root {

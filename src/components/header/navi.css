@@ -5,6 +5,32 @@
 .login {
     padding-right: 3px;
     padding-left: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login i {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.login:hover {
+    color: red;
+}
+
+.login:nth-child(1) {
+    position: relative;
+}
+
+.login:nth-child(1) span {
+    position: absolute;
+    top: -12px;
+    right: 2px;
+    border-radius: 50%;
+    color: red;
+    font-size: 17px;
+    font-weight: 500;
 }
 
 .navi_wrap {
@@ -12,23 +38,36 @@
 }
 
 .navi_sologan {
-
+    font-size: 50px;
+    font-weight: 400;
+    transform: translateX(-180px);
 }
 
 
-.navi_search {
-    /* display: flex;
-    flex-direction: column; */
+.navi_search h2 {
+    font-size: 32px;
+    padding-bottom: 10px;
+
 }
 
 .navi_search h1 {
     font-size: 28px;
 }
 
-.navi_input{
-    
+.navi_input {
+    border-radius: 5px !important;
+}
+
+.navi_input-icon {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.navi_input-icon:active {
+    opacity: 1;
 }
 
 .navi_img {
-    width: 60%;
+    margin-top: 20px;
+    width: 65%;
 }

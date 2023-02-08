@@ -4,7 +4,7 @@ import Navi from './Navi'
 
 function Header(props) {
     return (
-    <header >
+    <header>
         <Navi />
     </header>
     );

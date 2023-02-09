@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/github.io/web-books/static/css/main.073c9b0a.css",
-    "main.js": "/github.io/web-books/static/js/main.53817af2.js",
-    "static/js/787.490129b6.chunk.js": "/github.io/web-books/static/js/787.490129b6.chunk.js",
-    "static/media/logo.svg": "/github.io/web-books/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/github.io/web-books/static/css/main.488767f1.css",
+    "main.js": "/github.io/web-books/static/js/main.5fc984f2.js",
+    "static/media/bg2.png": "/github.io/web-books/static/media/bg2.baa326ffb98ef16b81a2.png",
+    "static/media/bg1.png": "/github.io/web-books/static/media/bg1.e9a51f5e7b113563d1ab.png",
+    "static/media/slider1.jpg": "/github.io/web-books/static/media/slider1.e43ef04c7ad10cd7cd05.jpg",
+    "static/media/imgBooks.jpg": "/github.io/web-books/static/media/imgBooks.b02725570ccd304cc5db.jpg",
     "index.html": "/github.io/web-books/index.html",
-    "main.073c9b0a.css.map": "/github.io/web-books/static/css/main.073c9b0a.css.map",
-    "main.53817af2.js.map": "/github.io/web-books/static/js/main.53817af2.js.map",
-    "787.490129b6.chunk.js.map": "/github.io/web-books/static/js/787.490129b6.chunk.js.map"
+    "main.488767f1.css.map": "/github.io/web-books/static/css/main.488767f1.css.map",
+    "main.5fc984f2.js.map": "/github.io/web-books/static/js/main.5fc984f2.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.53817af2.js"
+    "static/css/main.488767f1.css",
+    "static/js/main.5fc984f2.js"
   ]
 }

@@ -13,13 +13,14 @@ function Silder(props) {
                         <ListGroupItem className='slide_item' >Kinh tế</ListGroupItem>
                         <ListGroupItem className='slide_item' >Từ điển</ListGroupItem>
                         <ListGroupItem className='slide_item' >Văn hóa và xã </ListGroupItem>
-                        <ListGroupItem className='slide_item' >Lịch sử truyền thóng</ListGroupItem>
+                        <ListGroupItem className='slide_item' >Lịch sử truyền thống</ListGroupItem>
                         <ListGroupItem className='slide_item' >Sức khỏe và cuộc sống</ListGroupItem>
-                        <ListGroupItem className='slide_item' >Ngoại </ListGroupItem>
+                        <ListGroupItem className='slide_item' >Ngoại ngữ</ListGroupItem>
                         <ListGroupItem className='slide_item' >Thiếu nhi</ListGroupItem>
                         <ListGroupItem className='slide_item' >Giáo trình</ListGroupItem>
                         <ListGroupItem className='slide_item' >Văn học</ListGroupItem>
                         <ListGroupItem className='slide_item' >Sách trọn bộ</ListGroupItem>
+                        <ListGroupItem className='slide_item' >Tiểu thuyết</ListGroupItem>
                         <ListGroupItem className='slide_item' >Ebook khác</ListGroupItem>
                     </ListGroup>
                 </Col>
@@ -69,25 +70,49 @@ function Silder(props) {
                                     <p>HỖ TRỢ</p>
                                </div>
                                <div className="slide_info-content">
-                                    <p>ĐT: (028) 28 288 288  Email:tonghop@nxbhcm.com.vn</p>
+                                    <p>ĐT: (028) 28 288 288  Email:monne2310@gmail.com</p>
                                </div>
                             </div>
                         </Col>
                     </Row>
 
-                    <Row>
-                        <Col md={12}>ĐỀ XUẤT DÀNH BẠN</Col>
-                        <Col md={12}><i class="fa-thin fa-equals"></i></Col>
-                        <Col md={12}>Biết bao kẻ đọc sách và học hỏi, không phải để tìm ra chân lý mà là để gia tăng những gì mình đã biết.(Junline Green)</Col>
+                    <Row className="slide_suggest">
+                        <Col md={12} className="slide_suggest-title" >ĐỀ XUẤT DÀNH BẠN</Col>
+                        <Col md={1}></Col>
+                        <Col md={9} className="slide_suggest-sologan">Biết bao kẻ đọc sách và học hỏi, không phải để tìm ra chân lý mà là để gia tăng những gì mình đã biết.(Junline Green)</Col>
                     </Row>
 
-                    <Row>
+                    <Row className='suggest_list'>
                         <Col md={3}>
-                            <div>
+                            <div className='suggest_item'>
                                 <img src={imgBook} alt="img"/>
                                 <p>Tuổi trẻ đáng bao nhiêu</p>
                             </div>
                         </Col>
+
+                        <Col md={3}>
+                            <div className='suggest_item'>
+                                <img src={imgBook} alt="img"/>
+                                <p>Tuổi trẻ đáng bao nhiêu</p>
+                            </div>
+                        </Col>
+
+                        <Col md={3}>
+                            <div className='suggest_item'>
+                                <img src={imgBook} alt="img"/>
+                                <p>Tuổi trẻ đáng bao nhiêu? 400000</p>
+                            </div>
+                        </Col>
+
+                        <Col md={3}>
+                            <div className='suggest_item'>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpO3MF9__qUgjuzurl9CClmkuPvHeqE3Q8vg&usqp=CAU" alt="img"/>
+                                <p>Tuổi trẻ đáng bao nhiêu</p>
+                            </div>
+                        </Col>
+
+                        <div className='suggest_btn-left'><i class="fa-solid fa-chevron-left"></i></div>
+                        <div className='suggest_btn-right'><i class="fa-solid fa-chevron-right"></i></div>
                     </Row>
                 </Col>
             </Row>

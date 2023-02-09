@@ -7,6 +7,7 @@
     font-weight: bold;
     color: var(--secondary-color);
     padding-left: 15px;
+    padding-bottom: 10px;
 }
 
 .slide_list {
@@ -23,7 +24,13 @@
     border-top: 1px solid #333;
     border-bottom: 1px solid #333;
     font-weight: 500;
-    padding: 20px;
+    padding: 25px 20px;
+}
+
+
+.slide_item:hover {
+    cursor: pointer;
+    background-color: #67411a;
 }
 
 .slide_info {
@@ -38,6 +45,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+}
+
+.slide_info-wrap:hover {
+    background-color: #841717;
 }
 
 .slide_info-title {
@@ -71,4 +83,101 @@
 
 .slide_info-content {
     text-align: center;
+}
+
+.slide_suggest {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.slide_suggest-title {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--secondary-color) ;
+}
+
+.slide_suggest-sologan {
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.suggest_list {
+    margin: 10px 0;
+    height: 350px;
+    position: relative;
+}
+
+.suggest_item {
+    padding: 20px 30px 5px;
+    height: 100%;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.suggest_item:hover {
+    background-color: #904141;
+    cursor: pointer;
+}
+
+.suggest_item img {
+    width: 90%;
+    height: 70%;
+    max-height: 70%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.suggest_item p {
+    font-size: 16px;
+    text-align: center;
+    overflow-y: hidden;
+}
+
+.suggest_btn-left {
+    position: absolute;
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    top: 40%;
+}
+
+.suggest_btn-left i {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.suggest_btn-left:hover {
+    background-color: var(--primary-color);
+}
+
+.suggest_btn-right {
+    position: absolute;
+    padding: 15px;
+    border: 1px solid #333;
+    background-color: var(--secondary-color);
+    border-radius: 3px;
+    top: 40%;
+    opacity: 0.8;
+    right: 0;
+}
+
+.suggest_btn-right i {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.suggest_btn-right:hover {
+    background-color: var(--primary-color);
 }

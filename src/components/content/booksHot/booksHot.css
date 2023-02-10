@@ -1,0 +1,99 @@
+
+.booksHot_co {
+    max-height: 900px;
+    overflow: hidden;
+}
+
+.booksHot_title {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin: 15px 20px 40px;
+    font-weight: 600;
+}
+
+.booksHot_container {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.booksHot_item {
+    background-color: var(--secondary-color);
+    padding: 15px 5px 5px;
+    max-height: 380px;
+    border-radius: 7px;
+    border: 1px solid #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.booksHot_img {
+    margin-top: 10px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.booksHot_img img {
+    width: 80%;
+    object-fit: contain;
+}
+
+.booksHot_intro {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booksHot_intro p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.booksHot_intro-context {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+}
+
+.booksHot_sold {
+    margin-left: 10px;
+}
+
+.booksHot_price {
+    margin: 5px 0;
+}
+
+.booksHot_btn-add  {
+    padding: 5px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 2px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.booksHot_btn-add p {
+    font-size: 20px;
+}
+
+.booksHot_btn-add i {
+    margin-top: 5px;
+    display: none;
+    font-size: 24px;
+}
+
+.booksHot_btn-add:hover p {
+    display: none;
+}
+
+.booksHot_btn-add:hover  i {
+    display: flex ;
+}
+
+.booksHot_btn-icon i {
+    color: aliceblue;
+    font-size: 26px;
+}

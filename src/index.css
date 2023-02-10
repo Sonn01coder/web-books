@@ -11,6 +11,7 @@
 :root {
     --primary-color:#755139FF;
     --secondary-color:#D4B996FF;
+    --height-header: 52px;
 }
 
 body{

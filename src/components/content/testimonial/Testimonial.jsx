@@ -3,7 +3,11 @@ import "./testimonial.css"
 import sliderImg from '../../../asset/img/slider1.jpg'
 import { Col, Row } from 'react-bootstrap';
 
+
 function Testimonial(props) {
+    const $ = document.querySelector.bind(document)
+    const $$ = document.querySelectorAll.bind(document)
+    const circleCurr = $$('.fa-circle')
     const [count, setCount] = useState(0)
     const [sloganCurr, setSloganCurr] = useState(
     [

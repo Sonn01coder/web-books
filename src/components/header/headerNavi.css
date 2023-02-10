@@ -1,0 +1,18 @@
+.headerNav_container {
+    background-color: transparent;
+    height: var(--height-header);
+    position: fixed;
+    width: 100%;
+    max-width: 1200px;
+    background-color: transparent;
+    z-index: 10;
+    background-color: brown;
+    display: flex;
+    align-items: center;
+}
+
+.headerNav {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}

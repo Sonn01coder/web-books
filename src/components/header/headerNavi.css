@@ -1,18 +1,45 @@
-.headerNav_container {
-    background-color: transparent;
+.headerNav {
+    background-color: rgb(95, 91, 91);
     height: var(--height-header);
+}
+
+.headerNav_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
     position: fixed;
     width: 100%;
     max-width: 1200px;
     background-color: transparent;
     z-index: 10;
-    /* background-color: brown; */
-    display: flex;
-    align-items: center;
+    overflow: hidden;
+    color: aliceblue;
 }
 
 .headerNav {
     display: flex;
     justify-content: center;
     align-items: start;
+}
+
+.headerNav_nav {
+
+}
+
+.logo {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.login {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.login i {
+    margin-right: 8px;
 }

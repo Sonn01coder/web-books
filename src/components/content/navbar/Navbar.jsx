@@ -1,9 +1,39 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
-import "./slider.css"
-import imgBook from "../../../asset/img/imgBooks.jpg"
+import "./Navbar.css"
+import data from '../../../data'
+import { SmoothHorizontalScrolling } from '../../utils';
 
-function Silder(props) {
+function Navbar(props) {
+    const sliderRef = useRef()
+    const movieRef = useRef()
+
+    const proposeItem =data.products.filter(product => {
+        return product.propose === true
+    })
+
+    const handleScrollRight = () => {
+        const maxScrollLeft =  sliderRef.current.scrollWidth - sliderRef.current.clientWidth
+        console.log(maxScrollLeft)
+        if(sliderRef.current.scrollLeft < maxScrollLeft) {
+            SmoothHorizontalScrolling(sliderRef.current,
+                280,
+                movieRef.current.clientWidth,
+                sliderRef.current.scrollLeft)
+        }
+    }
+
+    const handleScrollLeft = () => {
+        const maxScrollLeft =  sliderRef.current.scrollWidth - sliderRef.current.clientWidth
+        console.log(maxScrollLeft)
+        if(sliderRef.current.scrollLeft > 0) {
+            SmoothHorizontalScrolling(sliderRef.current,
+                280,
+                -movieRef.current.clientWidth,
+                sliderRef.current.scrollLeft)
+        }
+    }
+
     return (
         <section className='slider'>
             <Row>
@@ -12,7 +42,7 @@ function Silder(props) {
                     <ListGroup className='slide_list'>
                         <ListGroupItem className='slide_item' >Kinh tế</ListGroupItem>
                         <ListGroupItem className='slide_item' >Từ điển</ListGroupItem>
-                        <ListGroupItem className='slide_item' >Văn hóa và xã </ListGroupItem>
+                        <ListGroupItem className='slide_item' >Văn hóa xã hội </ListGroupItem>
                         <ListGroupItem className='slide_item' >Lịch sử truyền thống</ListGroupItem>
                         <ListGroupItem className='slide_item' >Sức khỏe và cuộc sống</ListGroupItem>
                         <ListGroupItem className='slide_item' >Ngoại ngữ</ListGroupItem>
@@ -78,41 +108,25 @@ function Silder(props) {
 
                     <Row className="slide_suggest">
                         <Col md={12} className="slide_suggest-title" >ĐỀ XUẤT DÀNH BẠN</Col>
-                        <Col md={1}></Col>
-                        <Col md={9} className="slide_suggest-sologan">Biết bao kẻ đọc sách và học hỏi, không phải để tìm ra chân lý mà là để gia tăng những gì mình đã biết.(Junline Green)</Col>
+                        <Col md={2}></Col>
+                        <Col md={7} className="slide_suggest-slogan">Biết bao kẻ đọc sách và học hỏi, không phải để tìm ra chân lý mà là để gia tăng những gì mình đã biết.(Junline Green)</Col>
                     </Row>
 
                     <Row className='suggest_list'>
-                        <Col md={3}>
-                            <div className='suggest_item'>
-                                <img src={imgBook} alt="img"/>
-                                <p>Tuổi trẻ đáng bao nhiêu</p>
-                            </div>
-                        </Col>
-
-                        <Col md={3}>
-                            <div className='suggest_item'>
-                                <img src={imgBook} alt="img"/>
-                                <p>Tuổi trẻ đáng bao nhiêu</p>
-                            </div>
-                        </Col>
-
-                        <Col md={3}>
-                            <div className='suggest_item'>
-                                <img src={imgBook} alt="img"/>
-                                <p>Tuổi trẻ đáng bao nhiêu? 400000</p>
-                            </div>
-                        </Col>
-
-                        <Col md={3}>
-                            <div className='suggest_item'>
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpO3MF9__qUgjuzurl9CClmkuPvHeqE3Q8vg&usqp=CAU" alt="img"/>
-                                <p>Tuổi trẻ đáng bao nhiêu</p>
-                            </div>
-                        </Col>
-
-                        <div className='suggest_btn-left'><i class="fa-solid fa-chevron-left"></i></div>
-                        <div className='suggest_btn-right'><i class="fa-solid fa-chevron-right"></i></div>
+                        <div className='suggest_item-container' ref={sliderRef}>
+                            {
+                                proposeItem.map(product => (
+                                <div>
+                                    <div className='suggest_item' ref={movieRef}>
+                                        <img src={product.image} alt={product.slug}/>
+                                        <p>{product.name}</p>
+                                    </div>
+                                </div>
+                                ))
+                            }
+                        </div>
+                        <div className='suggest_btn-left' onClick={handleScrollLeft}><i class="fa-solid fa-chevron-left"></i></div>
+                        <div className='suggest_btn-right' onClick={handleScrollRight}><i class="fa-solid fa-chevron-right"></i></div>
                     </Row>
                 </Col>
             </Row>
@@ -120,4 +134,4 @@ function Silder(props) {
     );
 }
 
-export default Silder;
+export default Navbar;

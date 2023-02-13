@@ -2,6 +2,8 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './booksHot.css'
 import sliderImg from '../../../asset/img/imgBooks.jpg'
+import data from '../../../data'
+
 
 function BooksHot(props) {
     return (

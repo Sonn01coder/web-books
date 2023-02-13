@@ -5,7 +5,6 @@
 }
 
 .login_wrap {
-    transform:  translateY(var(--height-header));
     margin:auto;
     width: 500px;
     background-color: white;

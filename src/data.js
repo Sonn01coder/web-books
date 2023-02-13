@@ -47,7 +47,7 @@ const data = {
             numberReviews:"3",
             introduce:"Bất kể bạn là một nhà giao dịch mới toanh, chân ướt chân ráo bước vào thị trường hay đã là một nhà giao dịch chuyên nghiệp, cuốn sách Bậc Thầy Đầu Tư Theo Đà Tăng Trưởng sẽ mang lại những góc nhìn sâu sắc giúp bạn trở thành nhà đầu tư thành công hơn nữa. Những kiến thức quý giá sẽ biến những phân tích thành tiền bạc.",
             propose:false,
-            booksHot:true,
+            booksHot:false,
 
 
         },
@@ -81,7 +81,7 @@ const data = {
             numberReviews:"24",
             introduce:"Bộ sách được thiết kế chuẩn theo cấu trúc bài thi thực tế, sử dụng được cho cả hai hình thức thi là IELTS General và Academic",
             propose:false,
-            booksHot:false,
+            booksHot:true,
 
 
         },
@@ -165,8 +165,8 @@ const data = {
             rating: 3.5,
             numberReviews:"53",
             introduce:"Cuốn sách Người mẹ tốt hơn là người thầy tốt là một cuốn sổ tay về cách nuôi dạy con của nhà giáo, thạc sĩ Doãn Kiến Lợi. Chị đã tổng kết kinh nghiệm gần hai mươi năm nuôi dạy con, đồng thời kết hợp với một nền tảng lí thuyết vững chắc và kinh nghiệm thực tế có được trong quá trình trực tiếp dạy học cũng như tiếp xúc với khá nhiều trẻ em, từ đó đúc rút ra được những bài học quý báu trong cuốn sách này",
-            propose:false,
-            booksHot:true,
+            propose:true,
+            booksHot:false,
 
 
         },
@@ -183,7 +183,7 @@ const data = {
             numberReviews:"23",
             introduce:"Con nghĩ đi, mẹ không biết là tập hợp những bài viết được đón nhận nhiệt thành trên Facebook của Thu Hà (Mẹ Xu-Sim), rất nhiều bài viết trong số đó đã từng được đăng trên các báo Tuổi trẻ, Thanh Niên, Vnexpress, Dântrí, V Nhưng khác với những dòng chia sẻ trên mạng xã hội, nội dung các bài được chọn lọc hơn, có chủ đích hơn với giải pháp để con tự lập và mẹ tự do. Những bài viết của Thu Hà sinh động, thiết thực vì đó là những trải nghiệm thật, hoàn toàn là sự thật của một bà mẹ có hai con đang trong tuổi ăn, tuổi học, cuả một ngưuời làm việc với trẻ em liên tục suốt 20 năm, trong đó có 3 năm dạy học và 17 năm làm báo tuổi teen.",
             propose:false,
-            booksHot:false,
+            booksHot:true,
 
 
         },
@@ -193,7 +193,7 @@ const data = {
             slug:"tu dien tieng viet",
             author: "Dale Carnegie",
             image:"https://vnibooks.com/wp-content/uploads/2022/06/Tu-Dien-Tieng-Viet-75.000-Tu.jpg",
-            price:"9",
+            price:"69",
             category:["TuDien", "VanHoc", "GiaoTrinh"],
             countInStock:"30",
             rating: 4.9,
@@ -217,7 +217,7 @@ const data = {
             numberReviews:"3",
             introduce:"“Bước vào khoảng trời của tuổi biết buồn, Nguyễn Nhật Ánh đã ghi lại những bâng khuâng rung cảm đầu đời. Trong tâm tưởng của các em, bây giờ không chỉ nghĩ về cái gì mà còn nghĩ về ai, về một người khác giới cụ thể nào, và về cả bản thân, thế giới ấy tràn ngập những câu hỏi xôn xao về cái-gọi-là-tình-yêu. Truyện của Nguyễn Nhật Ánh đã đưa vào những câu hỏi lớn, muôn thuở, quen thuộc – những câu hỏi mà dường như trong đời ai cũng từng đối diện ít nhất một lần. Vì thế, trong khi độc giả thiếu niên phục lăn vì nhà văn đi guốc vào bụng họ, thì độc giả người lớn mỉm cười mơ màng nhớ lại một thời thơ dại…”",
             propose:true,
-            booksHot:false,
+            booksHot:true,
 
 
         },
@@ -234,7 +234,7 @@ const data = {
             numberReviews:"13",
             introduce:"Để học tốt môn Lịch sử lớp 9, ngoài những kiến thức trong sách giáo khoa và bài giảng của thầy cô giáo trên lớp, các em học sinh cần tham khảo thêm các tài liệu Lịch sử khác.",
             propose:true,
-            booksHot:false,
+            booksHot:true,
 
         }
     ]

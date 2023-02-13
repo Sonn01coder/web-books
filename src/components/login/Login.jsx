@@ -43,7 +43,7 @@ function Login(props) {
         <div className='login_container' style={{backgroundImage:`url(${backgroundLogin})`}}>
             <div className='login_wrap' >
                 <p>ĐĂNG NHẬP</p>
-                <form>
+                <form className='login_content'>
                     <div className='login_email'>
                         <label className='label'>Email</label>
                         <input 

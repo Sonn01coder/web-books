@@ -119,21 +119,21 @@
 
 .suggest_list {
     margin: 10px 0;
-    height: 400px;
+    height: 380px;
     position: relative;
 }
 
 .suggest_item-container {
     display: grid;
     gap: 8px;
-    grid-template-columns: repeat(7, 280px);
+    grid-template-columns: repeat(8, 280px);
     overflow:hidden;
     scroll-behavior: smooth;
     padding: 0 25px;
 }
 
 .suggest_item {
-    padding: 20px 30px 5px;
+    padding: 10px 30px 5px;
     height: 100%;
     border: 1px solid #333;
     display: flex;
@@ -155,6 +155,7 @@
     margin: auto;
     margin-top: 0;
     margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .suggest_item p {

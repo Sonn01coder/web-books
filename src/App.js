@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Cart from './components/cart/Cart';
 import Content from './components/content/Content';
 import HeaderNav from './components/header/HeaderNav';
 import Loading from './components/loading/Loading';
@@ -16,6 +17,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/loading' element={<Loading />} />
+          <Route path='/cart' element={<Cart />} />
         </Routes>  
       </div>
     </BrowserRouter>

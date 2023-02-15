@@ -230,7 +230,7 @@ const data = {
             price:"92",
             category: ["LichSu", 'GiaoTrinh'],
             countInStock:"20",
-            rating: 4.5,
+            rating: 3.8,
             numberReviews:"13",
             introduce:"Để học tốt môn Lịch sử lớp 9, ngoài những kiến thức trong sách giáo khoa và bài giảng của thầy cô giáo trên lớp, các em học sinh cần tham khảo thêm các tài liệu Lịch sử khác.",
             propose:true,

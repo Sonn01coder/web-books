@@ -107,7 +107,7 @@ function Navbar(props) {
                     </Row>
 
                     <Row className="slide_suggest">
-                        <Col md={12} className="slide_suggest-title" >ĐỀ XUẤT DÀNH BẠN</Col>
+                        <Col md={12} className="slide_suggest-title" >ĐỀ XUẤT DÀNH CHO BẠN</Col>
                         <Col md={2}></Col>
                         <Col md={7} className="slide_suggest-slogan">Biết bao kẻ đọc sách và học hỏi, không phải để tìm ra chân lý mà là để gia tăng những gì mình đã biết.(Junline Green)</Col>
                     </Row>

@@ -2,7 +2,8 @@
 	color: var(--fg);
 	font: 1em/1.8 sans-serif;
 	display: grid;
-    height: calc(100vh - var(--height-header));
+    height: 100vh;
+	transform: translateY(var(--height-header));
 	place-items: center;
 	font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1280 - 320));
     background: url('http://haitien.com.vn/code/web/uploads/media/792227/d40bd550b5689d12f99958779ddc4666.jpg') no-repeat;

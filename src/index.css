@@ -11,7 +11,7 @@
 :root {
     --primary-color:#755139FF;
     --secondary-color:#D4B996FF;
-    --height-header: 56px;
+    --height-header: 52px;
     --hue: 223;
 	--bg: hsl(var(--hue),90%,90%);
 	--fg: hsl(var(--hue),90%,10%);

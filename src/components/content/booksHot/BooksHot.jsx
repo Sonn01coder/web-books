@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import './booksHot.css'
 import sliderImg from '../../../asset/img/imgBooks.jpg'
 import data from '../../../data'
+import Rating from '../rating/Rating';
 
 function BooksHot(props) {
     const listBooksHot = data.products.filter(product => {
@@ -27,18 +28,8 @@ function BooksHot(props) {
                                                     <img src={product.image} alt="books" />
                                                 </div>
                                                 <div className='booksHot_intro'>
-                                                    <p>{product.name}</p>
-                                                    <div className='booksHot_intro-context'>
-                                                        <span className='booksHot_rating'>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </span>
-                                                        <span className='booksHot_sold'>Đã bán 50</span>
-                                                    </div>
-                                                    <span className='booksHot_price'>Gia {product.price}VND</span>
+                                                    <Rating rating={product.rating} numReview={product.numberReviews} />
+                                                    <span className='booksHot_price'>Giá: {product.price}VND</span>
                                                 </div>
                                             </div>
                                             <button className='booksHot_btn-add'>

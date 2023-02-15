@@ -37,6 +37,7 @@
     justify-content: center;
     align-items: start;
     overflow-y: hidden;
+    margin-bottom: 5px;
 }
 
 .booksHot_img img {
@@ -56,15 +57,6 @@
     margin-bottom: 5px;
 }
 
-.booksHot_intro-context {
-    display: flex;
-    font-size: 14px;
-    align-items: center;
-}
-
-.booksHot_sold {
-    margin-left: 10px;
-}
 
 .booksHot_price {
     margin: 5px 0;

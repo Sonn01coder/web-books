@@ -1,6 +1,12 @@
 .headerNav {
     background-color: rgb(95, 91, 91);
+    width: 100%;
     height: var(--height-header);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+    z-index: 10;
 }
 
 .headerNav_container {
@@ -8,30 +14,41 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    position: fixed;
     width: 100%;
     max-width: 1200px;
     background-color: transparent;
-    z-index: 10;
     overflow: hidden;
     color: aliceblue;
-}
-
-.headerNav {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-}
-
-.headerNav_nav {
-
+    height: 100%;
 }
 
 .logo {
-    width: 35%;
-    height: 100%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+}
+
+.logo img{
+    width: 30%;
+    height: 100%;
+}
+
+.header-height-max {
+    height: 100%;
+}
+
+.header_cart {
+    position: relative;
+    font-size: 18px;
+    height: var(--height-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_cart span {
+    position: absolute;
+    top: -4%;
+    right: 25%;
 }
 
 
@@ -50,6 +67,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    font-size: 16px;
 }
 
 .login i {

@@ -17,3 +17,8 @@
 	--fg: hsl(var(--hue),90%,10%);
 	--trans-dur: 0.3s;
 }
+
+a, a:hover {
+    color: black;
+    text-decoration: none;
+}

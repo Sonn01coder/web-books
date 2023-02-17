@@ -3,6 +3,7 @@ import { Col, ListGroup, ListGroupItem, Row } from 'react-bootstrap';
 import "./Navbar.css"
 import data from '../../../data'
 import { SmoothHorizontalScrolling } from '../../utils';
+import { Link } from 'react-router-dom';
 
 function Navbar(props) {
     const sliderRef = useRef()
@@ -118,8 +119,10 @@ function Navbar(props) {
                                 proposeItem.map(product => (
                                 <div>
                                     <div className='suggest_item' ref={movieRef}>
-                                        <img src={product.image} alt={product.slug}/>
-                                        <p>{product.name}</p>
+                                        <Link to={`/product/${product.slug}`}>
+                                            <img src={product.image} alt={product.slug}/>
+                                            <p>{product.name}</p>
+                                        </Link>
                                     </div>
                                 </div>
                                 ))

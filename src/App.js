@@ -5,6 +5,7 @@ import Content from './components/content/Content';
 import HeaderNav from './components/header/HeaderNav';
 import Loading from './components/loading/Loading';
 import Login from './components/login/Login';
+import ProductScreen from './components/productScreen/ProductScreen';
 import Register from './components/register/Register';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/register' element={<Register />} />
           <Route path='/loading' element={<Loading />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path="/product/:slug" element={<ProductScreen />} />
         </Routes>  
       </div>
     </BrowserRouter>

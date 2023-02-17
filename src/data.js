@@ -1,6 +1,7 @@
 const data = {
     products: [
         {
+            countCart: 0,
             _id: 1,
             name:"Đắc Nhân Tâm (Khổ Lớn)",
             slug:"Dac Nhan Tam",
@@ -18,6 +19,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 2,
             name:"Thần Số Học Ứng Dụng",
             slug:"than so hoc ung dung",
@@ -35,6 +37,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 3,
             name:"Những Bậc Thầy Đầu Tư Theo Đà Tăng Trưởng",
             slug:"nhung bac thay dau tu",
@@ -52,6 +55,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 4,
             name:"Giao Dịch Như Một Phù Thuỷ Chứng Khoán",
             slug:"gaio dich nhu mot phu thuy chung khoan",
@@ -69,6 +73,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 5,
             name:"Bộ Cambridge English IELTS",
             slug:"bo cambridge english ielts",
@@ -86,6 +91,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 6,
             name:"An Lạc Từng Bước Chân",
             slug:"an lac tung buoc chan",
@@ -103,12 +109,13 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 7,
             name:"Combo 5 Cuốn: Những Quyển Sách Hay",
-            slug:"nhung quyen sach ",
+            slug:"nhung quyen sach hay",
             author:["Thích Nhất Hạnh"],
-            image:"https://vnibooks.com/wp-content/uploads/2022/04/combo-5-sach-hay-thich-nhat-hanh.webp",
-            price:"69",
+            image:"https://newshop.vn/public/uploads/products/25770/combo-5-cuon-sach-doc-de-truong-thanh-1-tuyen-chon-nhung-cuon-sach-hay-danh-cho-ban-tre.jpg",
+            price:69,
             category:["VanHoc", "TronBo", "EbookKhac"],
             countInStock:"23",
             rating: 4.9,
@@ -120,6 +127,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 8,
             name:"Hai Số Phận",
             slug:"hai so phan",
@@ -137,6 +145,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 9,
             name:"Trọn Bộ 6 Tập: Tru Tiên (Tái Bản)",
             slug:"tron bo tru tien",
@@ -154,13 +163,14 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 10,
             name:"Người mẹ tốt hơn là người thầy tốt",
-            slug:"nguoi me tot hon la nguoi thay ",
+            slug:"nguoi me tot hon la nguoi thay tot",
             author: ["Doãn Kiến Lợi"],
             image:"https://vnibooks.com/wp-content/uploads/2022/05/nguoi-me-tot-hon-768x768.jpeg.webp",
             price:"23",
-            category:["VanHoaXaHoi", "SucKhoeCuocSongoeCuocSong"],
+            category:["VanHoaXaHoi", "SucKhoeCuocSong"],
             countInStock:"24",
             rating: 3.5,
             numberReviews:"53",
@@ -171,16 +181,17 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 11,
             name:"Con Nghĩ Đi, Mẹ Không Biết!",
-            slug:"con nghi di me khong ",
+            slug:"con nghi di me khong biet",
             author: ["Thu Hà"],
-            image:"https://vnibooks.com/wp-content/uploads/2022/05/Con-nghi-di-me-khong-biet-768x768.jpg.webp",
-            price:"49",
+            image:"https://vnibooks.com/wp-content/uploads/2022/05/Con-nghi-di-me-khong-biet-768x768.jpg",
+            price:49,
             category: ["SucKhoeCuocSong"],
-            countInStock:"220",
+            countInStock:220,
             rating: 2.5,
-            numberReviews:"23",
+            numberReviews:23,
             introduce:"Con nghĩ đi, mẹ không biết là tập hợp những bài viết được đón nhận nhiệt thành trên Facebook của Thu Hà (Mẹ Xu-Sim), rất nhiều bài viết trong số đó đã từng được đăng trên các báo Tuổi trẻ, Thanh Niên, Vnexpress, Dântrí, V Nhưng khác với những dòng chia sẻ trên mạng xã hội, nội dung các bài được chọn lọc hơn, có chủ đích hơn với giải pháp để con tự lập và mẹ tự do. Những bài viết của Thu Hà sinh động, thiết thực vì đó là những trải nghiệm thật, hoàn toàn là sự thật của một bà mẹ có hai con đang trong tuổi ăn, tuổi học, cuả một ngưuời làm việc với trẻ em liên tục suốt 20 năm, trong đó có 3 năm dạy học và 17 năm làm báo tuổi teen.",
             propose:false,
             booksHot:true,
@@ -188,6 +199,7 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 12,
             name:"Từ Điển Tiếng Việt 75.000 Từ",
             slug:"tu dien tieng viet",
@@ -205,9 +217,10 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 13,
             name:"Lá nằm trong lá",
-            slug:"la nam trong ",
+            slug:"la nam trong la",
             author: ["Nguyễn Nhật Ánh"],
             image:"https://vnibooks.com/wp-content/uploads/2022/08/La-nam-trong-la-768x1202.jpg.webp",
             price:"49",
@@ -222,9 +235,10 @@ const data = {
 
         },
         {
+            countCart: 0,
             _id: 14,
             name:"Để học tốt lịch sử 9",
-            slug:"de hoc tot lich su ",
+            slug:"de hoc tot lich su 9",
             author: ["Bùi Đức Dũng"],
             image:"https://vnibooks.com/wp-content/uploads/2022/06/L9-De-hoc-tot-lich-su-9-768x768.jpg.webp",
             price:"92",

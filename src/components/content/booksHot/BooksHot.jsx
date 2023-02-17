@@ -1,16 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './booksHot.css'
-import sliderImg from '../../../asset/img/imgBooks.jpg'
 import data from '../../../data'
-import Rating from '../rating/Rating';
+import Rating from '../../rating/Rating';
+import { Link } from 'react-router-dom';
 
 function BooksHot(props) {
     const listBooksHot = data.products.filter(product => {
         return product.booksHot === true
     })
 
-    console.log(listBooksHot)
     return (
         <div className='booksHot'>
             <Container>
@@ -24,10 +23,11 @@ function BooksHot(props) {
                                     <div className='booksHot_container'>
                                         <div className='booksHot_item'>
                                             <div className='booksHot_wrap'>
-                                                <div className='booksHot_img'>
+                                                <Link to={`/product/${product.slug}`} className='booksHot_img'>
                                                     <img src={product.image} alt="books" />
-                                                </div>
+                                                </Link>
                                                 <div className='booksHot_intro'>
+                                                    <Link to={`/product/${product.slug}`}>{product.name}</Link>
                                                     <Rating rating={product.rating} numReview={product.numberReviews} />
                                                     <span className='booksHot_price'>Giá: {product.price}VND</span>
                                                 </div>

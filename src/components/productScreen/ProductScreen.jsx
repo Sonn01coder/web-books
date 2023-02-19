@@ -9,7 +9,6 @@ function ProductScreen(props) {
 
     const {slug} = useParams();
     const product = data.products.find((x)=> x.slug === slug)
-    console.log(product.slug)
 
     return (
         <section className='productScreen'>
@@ -35,8 +34,8 @@ function ProductScreen(props) {
                     <Row>
                         <div className='productScreen_navigation'>
                             <Link to='/web-books' className='productScreen_link'>Trang Chủ</Link> / 
-                            <Link to='/web-books' className='productScreen_link'>Kinh Tế</Link> / 
-                            <Link to='/web-books' className='productScreen_link'> Đièu bí ẩn cần giải đáp</Link> 
+                            <Link to='/web-books' className='productScreen_link'>{product.category[0]}</Link> /
+                            <Link to='/web-books' className='productScreen_link'> {product.name}</Link> 
                         </div>
                     </Row>
 
@@ -53,7 +52,7 @@ function ProductScreen(props) {
                                     <p>{product.author}</p>
                                 </Col>
                                 <Col md={12} className='productScreen_price'>{product.price} VND</Col>
-                                <Col md={12} className='productScreen_tags'>Tags: Kinh te va xa hoi</Col>
+                                <Col md={12} className='productScreen_tags'>Tags: {product.category[0]}, {product.category[1]} và {product.category[2]}</Col>
                                 <Col className='productScreen_button-cart'> 
                                     <button >Thêm vào giỏ hàng</button>
                                 </Col>

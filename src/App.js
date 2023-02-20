@@ -7,6 +7,7 @@ import Loading from './components/loading/Loading';
 import Login from './components/login/Login';
 import ProductScreen from './components/productScreen/ProductScreen';
 import Register from './components/register/Register';
+import Search from './components/search/Search';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path='/loading' element={<Loading />} />
           <Route path='/cart' element={<Cart />} />
           <Route path="/product/:slug" element={<ProductScreen />} />
+          <Route path='/search' element={<Search />} />
         </Routes>  
       </div>
     </BrowserRouter>

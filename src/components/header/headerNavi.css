@@ -45,6 +45,14 @@
     align-items: center;
 }
 
+.header_cart a {
+    color: aliceblue;
+}
+
+.header_cart span {
+    color: red;
+}
+
 .header_cart span {
     position: absolute;
     top: -4%;

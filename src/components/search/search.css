@@ -1,0 +1,22 @@
+.search {
+    margin: 20px 10px;
+    padding-top: calc(var(--height-header) + 20px);
+}
+
+.search_list-category {
+    margin-top: 10px;
+}
+
+.search {
+    margin: 0 0 20px;
+}
+
+.search_link {
+    color: #454444;
+    margin: 0 8px;
+}
+
+.search_link:hover {
+    color: black;
+    text-decoration: none;
+}

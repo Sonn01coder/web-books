@@ -8,22 +8,26 @@ import Login from './components/login/Login';
 import ProductScreen from './components/productScreen/ProductScreen';
 import Register from './components/register/Register';
 import Search from './components/search/Search';
+import { Provider } from 'react-redux';
+import storeRedux from './storeRedux';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App .modal-fullscreen">
-        <HeaderNav />
-        <Routes>
-          <Route exact path='/web-books' element={<Content />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/register' element={<Register />} />
-          <Route path='/loading' element={<Loading />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path="/product/:slug" element={<ProductScreen />} />
-          <Route path='/search' element={<Search />} />
-        </Routes>  
-      </div>
+      <Provider store={storeRedux} >
+        <div className="App .modal-fullscreen">
+          <HeaderNav />
+          <Routes>
+            <Route exact path='/web-books' element={<Content />} />
+            <Route path='/login' element={<Login />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/loading' element={<Loading />} />
+            <Route path='/cart' element={<Cart />} />
+            <Route path="/product/:slug" element={<ProductScreen />} />
+            <Route path='/search' element={<Search />} />
+          </Routes>  
+        </div>
+      </Provider>
     </BrowserRouter>
   );
 }

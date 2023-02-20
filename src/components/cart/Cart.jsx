@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './cart.css'
+import {deleteProduct} from "../../store/actions/action"
+import { connect } from 'react-redux';
 
 function Cart(props) {
     return (
@@ -15,94 +17,32 @@ function Cart(props) {
                         <Col md={2} className="d-flex justify-content-center">Số lượng</Col>
                         <Col md={2} className="d-flex justify-content-center">Giá thành</Col>
                     </Row>
-                    <Row  className='cart_list'>
-                        <Col md={12} className='cart_item'>
-                            <Row>
-                                <Col md={7}>
-                                    <Row className='cart_item-product'>
-                                        <Col md={3}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBstXAmkzVK-Ze6Lg_gZMVl57-7Oyvpw6QA&usqp=CAU" /></Col>
-                                        <Col>Book name is ....</Col>
-                                    </Row>
-                                </Col>
-                                <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
-                                    <i class="fa-solid fa-circle-minus"></i>
-                                    <p>6</p>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </Col>
-                                <Col md={2} className="d-flex justify-content-center cart_item-price">199 VND</Col>
-                                                            <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
-                            </Row>
-                        </Col>
-                        <Col md={12} className='cart_item'>
-                            <Row>
-                                <Col md={7}>
-                                    <Row className='cart_item-product'>
-                                        <Col md={3}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBstXAmkzVK-Ze6Lg_gZMVl57-7Oyvpw6QA&usqp=CAU" /></Col>
-                                        <Col>Book name is ....</Col>
-                                    </Row>
-                                </Col>
-                                <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
-                                    <i class="fa-solid fa-circle-minus"></i>
-                                    <p>6</p>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </Col>
-                                <Col md={2} className="d-flex justify-content-center cart_item-price">199 VND</Col>
-                                <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
-                            </Row>
-                        </Col>
-                        <Col md={12} className='cart_item'>
-                            <Row>
-                                <Col md={7}>
-                                    <Row className='cart_item-product'>
-                                        <Col md={3}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBstXAmkzVK-Ze6Lg_gZMVl57-7Oyvpw6QA&usqp=CAU" /></Col>
-                                        <Col>Book name is ....</Col>
-                                    </Row>
-                                </Col>
-                                <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
-                                    <i class="fa-solid fa-circle-minus"></i>
-                                    <p>6</p>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </Col>
-                                <Col md={2} className="d-flex justify-content-center cart_item-price">199 VND</Col>
-                                <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
-                            </Row>
-                        </Col>
-                        <Col md={12} className='cart_item'>
-                            <Row>
-                                <Col md={7}>
-                                    <Row className='cart_item-product'>
-                                        <Col md={3}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBstXAmkzVK-Ze6Lg_gZMVl57-7Oyvpw6QA&usqp=CAU" /></Col>
-                                        <Col>Book name is ....</Col>
-                                    </Row>
-                                </Col>
-                                <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
-                                    <i class="fa-solid fa-circle-minus"></i>
-                                    <p>6</p>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </Col>
-                                <Col md={2} className="d-flex justify-content-center cart_item-price">199 VND</Col>
-                                <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
-                            </Row>
-                        </Col>
-                        <Col md={12} className='cart_item'>
-                            <Row>
-                                <Col md={7}>
-                                    <Row className='cart_item-product'>
-                                        <Col md={3}><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrBstXAmkzVK-Ze6Lg_gZMVl57-7Oyvpw6QA&usqp=CAU" /></Col>
-                                        <Col>Book name is ....</Col>
-                                    </Row>
-                                </Col>
-                                <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
-                                    <i class="fa-solid fa-circle-minus"></i>
-                                    <p>6</p>
-                                    <i class="fa-solid fa-circle-plus"></i>
-                                </Col>
-                                <Col md={2} className="d-flex justify-content-center cart_item-price">199 VND</Col>
-                                <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
-                            </Row>
-                        </Col>
-                    </Row>
-
+                    {/* <Row  className='cart_list'>
+                        {
+                            cart.length > 0 ?
+                                (cart.map(product => (
+                                    <Col md={12} className='cart_item'>
+                                        <Row>
+                                            <Col md={7}>
+                                                <Row className='cart_item-product'>
+                                                    <Col md={3}><img src={product.image} /></Col>
+                                                    <Col>{product.name}</Col>
+                                                </Row>
+                                            </Col>
+                                            <Col md={2} className='d-flex justify-content-around cart_item-countProduct'>
+                                                <i class="fa-solid fa-circle-minus"></i>
+                                                <p>{product.countCart}</p>
+                                                <i class="fa-solid fa-circle-plus"></i>
+                                            </Col>
+                                            <Col md={2} className="d-flex justify-content-center cart_item-price">{product.price} VND</Col>
+                                            <Col className='cart_remove'><i class="fa-solid fa-trash"></i></Col>    
+                                        </Row>
+                                    </Col>)
+                                )) : (
+                                    <p>Khong co san pham</p>
+                                )
+                        }
+                    </Row> */}
                     
                 </Col>
                 <Col>
@@ -148,4 +88,18 @@ function Cart(props) {
     );
 }
 
-export default Cart;
+const mapStateToProps = (state) => {
+    return {
+        cart: state.cart.cartList
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        deleteProduct: (product_current) => {
+            dispatch(deleteProduct(product_current))
+        }
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

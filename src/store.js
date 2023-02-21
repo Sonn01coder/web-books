@@ -5,9 +5,9 @@ import thunk from "redux-thunk";
 
 import rootReducer from "./rootsReducer";
 
-const storeRedux =  createStore(
+const store =  createStore(
     rootReducer,
     composeWithDevTools(applyMiddleware(logger, thunk))
 )
 
-export default storeRedux; 
+export default store; 

@@ -8,13 +8,10 @@ import Login from './components/login/Login';
 import ProductScreen from './components/productScreen/ProductScreen';
 import Register from './components/register/Register';
 import Search from './components/search/Search';
-import { Provider } from 'react-redux';
-import storeRedux from './storeRedux';
 
 function App() {
   return (
     <BrowserRouter>
-      <Provider store={storeRedux} >
         <div className="App .modal-fullscreen">
           <HeaderNav />
           <Routes>
@@ -27,7 +24,6 @@ function App() {
             <Route path='/search' element={<Search />} />
           </Routes>  
         </div>
-      </Provider>
     </BrowserRouter>
   );
 }

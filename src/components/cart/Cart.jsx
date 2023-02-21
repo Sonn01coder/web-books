@@ -4,7 +4,7 @@ import './cart.css'
 import {deleteProduct} from "../../store/actions/action"
 import { connect } from 'react-redux';
 
-function Cart(props) {
+function Cart({cartList}) {
     return (
         <Container className='cart'>
             <Row className='cart_container'>
@@ -17,10 +17,10 @@ function Cart(props) {
                         <Col md={2} className="d-flex justify-content-center">Số lượng</Col>
                         <Col md={2} className="d-flex justify-content-center">Giá thành</Col>
                     </Row>
-                    {/* <Row  className='cart_list'>
+                    <Row  className='cart_list'>
                         {
-                            cart.length > 0 ?
-                                (cart.map(product => (
+                            cartList.length > 0 ?
+                                (cartList.map(product => (
                                     <Col md={12} className='cart_item'>
                                         <Row>
                                             <Col md={7}>
@@ -42,7 +42,7 @@ function Cart(props) {
                                     <p>Khong co san pham</p>
                                 )
                         }
-                    </Row> */}
+                    </Row>
                     
                 </Col>
                 <Col>
@@ -90,7 +90,7 @@ function Cart(props) {
 
 const mapStateToProps = (state) => {
     return {
-        cart: state.cart.cartList
+        cart: state.cartList
     }
 }
 
@@ -102,4 +102,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Cart);
+export default connect({mapStateToProps, mapDispatchToProps})(Cart);
